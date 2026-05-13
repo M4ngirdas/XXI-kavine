@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+
+  --color-bakery-beige: #f9f7f2;
+  --color-bakery-dark: #121212;
+  --color-bakery-gold: #c5a059;
+  --color-bakery-gray: #707070;
+}
+
+@layer base {
+  :root {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-bakery-beige text-bakery-dark antialiased overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .grain-overlay {
+    @apply fixed inset-0 opacity-[0.02] z-[9999] pointer-events-none;
+    background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  }
+}
