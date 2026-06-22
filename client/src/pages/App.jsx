@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react';
-import Hero from './components/Hero';
-import About from './components/About';
-import Products from './components/Products';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import React, { useEffect } from 'react'
+import Hero from '../components/Hero'
+import About from '../components/About'
+import Products from '../components/Products'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer.jsx'
+import Header from "../components/Header.jsx"
 
-function App() {
+export default function App() {
   useEffect(() => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <div className="relative">
+      <Header />
       <div className="grain-overlay" />
       <Hero />
       <About />
@@ -29,5 +31,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
