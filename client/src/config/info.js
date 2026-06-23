@@ -4,6 +4,6 @@ export const info = {
     address: "Kepyklėlės g. 1",
     city: "Kaunas",
     work_hours: "10:00 – 19:30",
-    copyright: "© 2026 Kepyklėlė. Vilnius, Lietuva.",
+    copyright: "© 2026 Nemuno kepyklėlė. Vilnius, Lietuva.",
     facebook_url: "https://www.facebook.com/",
 }

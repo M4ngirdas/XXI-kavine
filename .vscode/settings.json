@@ -1,12 +1,5 @@
 {
     "files.exclude": {
-        "client/node_modules": true,
-        ".vscode": true,
-        "client/.gitignore": true,
-        "client/index.html": true,
-        "client/package-lock.json": true,
-        "client/package.json": true,
-        "client/vite.config.js": true,
-        "**/vite.config.js": true
+        ".vscode": true
     }
 }
