@@ -50,7 +50,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="w-full lg:w-1/2 min-h-[450px] lg:min-h-full relative overflow-hidden transition-all">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2306.183756209268!2d25.28827727734898!3d54.6866952727103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd941199342733%3A0xc3b8a1c97a5542a2!2sGedimino%20pilies%20bok%C5%A1tas!5e0!3m2!1slt!2slt!4v1710000000000!5m2!1slt!2slt" className="absolute inset-0 w-full h-full" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://maps.google.com/maps?q=Vand%C5%BEiogalos%20pl.%2081.%20Domeikava,%20Kaunas,%20Lithuania,%2054358&t=&z=15&ie=UTF8&iwloc=&output=embed" className="absolute inset-0 w-full h-full" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { info } from "../config/info"
 import { LuMenu, LuX } from "react-icons/lu"
-import brand_logo from "../assets/brand_logo.png"
+import logo from "../assets/logo.png"
 
 export default function Header() {
     const [direction, setDirection] = useState("")
@@ -71,7 +71,7 @@ export default function Header() {
             <header className={`${direction === "down" ? "-translate-y-full" : "translate-y-0"} ${currentBg} flex justify-center fixed w-full z-50 py-1 md:py-2 transition-all duration-300`}>
                 <div className="flex justify-between items-center w-full max-w-7xl px-4 sm:px-6">
                     <a href="#hero" className="transition-transform hover:scale-105">
-                        <img src={brand_logo} className="h-24 w-24 object-contain" alt={info.brand_name} />
+                        <img src={logo} className="w-30 md:w-40 h-25 object-contain" alt={info.brand_name} />
                     </a>
                     <nav className="hidden md:flex gap-8 items-center text-bakery-dark">{navElements}</nav>
                     <button onClick={() => setIsSidebarShown(true)} className="block md:hidden cursor-pointer p-1 text-bakery-dark hover:text-bakery-gold transition-colors" aria-label="Atidaryti meniu">

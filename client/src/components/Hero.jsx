@@ -1,7 +1,8 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { texts } from "../config/texts";
-import { info } from "../config/info";
+import { motion } from 'framer-motion'
+import { texts } from "../config/texts"
+import { info } from "../config/info"
+
+import hero from "../assets/hero.png"
 
 export default function Hero() {
     return (
@@ -9,12 +10,9 @@ export default function Hero() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 pt-8 lg:pt-0 items-center">
                     <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} className="space-y-6 md:space-y-8 text-center lg:text-left flex flex-col items-center lg:items-start">
-                        <div>
-                            <span className="text-bakery-gold uppercase tracking-[0.4em] text-[10px] font-bold block mb-3 md:mb-4">Sveiki atvykę į</span>
-                            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.1] lg:leading-[0.9] text-bakery-dark break-words w-full">
-                                {info.brand_name} <br className="hidden sm:inline" /> <span className="italic">Kepyklėlę</span>
-                            </h1>
-                        </div>
+                        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.1] lg:leading-[0.9] text-bakery-dark break-words w-full">
+                            {info.brand_name} <br className="hidden sm:inline" /> <span className="italic">Kavinė</span>
+                        </h1>
                         <p className="text-bakery-gray text-base md:text-lg font-light leading-relaxed max-w-md mx-auto lg:mx-0">
                             {texts.hero_desc}
                         </p>
@@ -40,7 +38,7 @@ export default function Hero() {
                                 </p>
                             </div>
                             <div className="mt-6 md:mt-8 aspect-video overflow-hidden">
-                                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover" alt="Mūsų kepykla" />
+                                <img src={hero} className="w-full h-full object-cover" alt="Hero image" />
                             </div>
                         </div>
                         <div className="absolute -top-4 -right-4 md:-top-6 md:-right-6 w-full h-full border border-bakery-gold/20 z-0 hidden sm:block" />

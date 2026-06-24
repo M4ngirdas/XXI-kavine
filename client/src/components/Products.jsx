@@ -1,13 +1,16 @@
-import React from 'react'
 import { motion } from 'framer-motion'
-
 import { texts } from "../config/texts"
 
+import dessert from "../assets/products/dessert.png"
+import mainDishes from "../assets/products/main_dishes.png"
+import snacks from "../assets/products/snacks.png"
+import bakery from "../assets/products/bakery.png"
+
 const items = [
-    { id: 1, name: 'Kepykla', img: 'https://images.unsplash.com/photo-1549931319-a545dcf3bc73?q=80&w=800' },
-    { id: 2, name: 'Konditerija', img: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=800' },
-    { id: 3, name: 'Gėrimai', img: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800' },
-    { id: 4, name: 'Duona', img: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800' }
+    { id: 1, name: 'Konditerija', imgSrc: bakery },
+    { id: 2, name: 'Desertai', imgSrc: dessert },
+    { id: 3, name: 'Pagrindiniai patiekalai', imgSrc: mainDishes },
+    { id: 4, name: 'Užkandžiai', imgSrc: snacks }
 ];
 
 export default function Products() {
@@ -16,7 +19,6 @@ export default function Products() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full">
 
                 <div className="text-center max-w-2xl mx-auto mb-12 md:mb-20">
-                    <span className="text-bakery-gold uppercase tracking-[0.4em] text-[10px] font-bold block mb-3 md:mb-4">Pasirinkimas</span>
                     <h2 className="text-3xl md:text-5xl font-serif mb-4 md:mb-6">{texts.products_title}</h2>
                     <p className="text-bakery-gray text-sm md:text-base font-light leading-relaxed">
                         {texts.products_desc}
@@ -27,7 +29,7 @@ export default function Products() {
                     {items.map((item, i) => (
                         <motion.div key={item.id} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="flex flex-col items-center text-center">
                             <div className="relative aspect-[3/4] w-full overflow-hidden mb-3 md:mb-6 bg-bakery-beige">
-                                <img src={item.img} className="w-full h-full object-cover" alt={item.name} />
+                                <img src={item.imgSrc} className="w-full h-full object-cover" alt={item.name} />
                             </div>
                             <h3 className="text-sm md:text-lg font-serif tracking-wide">{item.name}</h3>
                         </motion.div>
